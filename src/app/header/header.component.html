@@ -1,1 +1,19 @@
-<p>header works!</p>
+<header>
+  <div class="container">
+    <div class="logo"><img src="logo/Logo.svg" alt="logo" /></div>
+    <div class="nav" [class.show]="openMenu">
+      <div class="links">
+        <ul>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Customer Support</a></li>
+        </ul>
+      </div>
+      <div class="auth">
+        <button class="log">Log In</button>
+        <button class="sign">Start For Free</button>
+      </div>
+    </div>
+    <i class="fa-solid fa-bars" (click)="toggle()"></i>
+  </div>
+</header>

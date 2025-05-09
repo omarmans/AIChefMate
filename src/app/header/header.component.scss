@@ -1,0 +1,143 @@
+header {
+  i {
+    display: none;
+  }
+  background-color: #f1f2ed;
+  font-family: Work Sans;
+  .container {
+    display: flex;
+    position: relative;
+
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .logo {
+      width: 50px;
+      img {
+        width: 100%;
+      }
+    }
+    .nav {
+      flex: 1;
+      display: flex;
+      margin-left: 60px;
+
+      justify-content: space-between;
+
+      .links {
+        flex: 1;
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          gap: 20px;
+
+          li {
+            a {
+              font-size: 18px;
+              font-weight: 600;
+              color: #213d34;
+              text-decoration: none;
+              transition: 0.5s;
+              &:hover {
+                // color: #6b8f83;
+              }
+            }
+          }
+        }
+      }
+      .auth {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        button {
+          border: none;
+          outline: none;
+          cursor: pointer;
+        }
+        .log {
+          font-weight: bold;
+          color: #213d34;
+          padding: 10px;
+          font-size: 14px;
+        }
+        .sign {
+          color: #fff;
+          background: #213d34;
+          padding: 15px 30px;
+          border-radius: 40px;
+          transition: 0.5s;
+          &:hover {
+            color: #213d34;
+            background-color: #6b8f83;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    i {
+      display: block;
+
+      font-size: 28px;
+      color: #6b8f83;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        color: #213d34;
+      }
+    }
+    .container {
+      justify-content: space-between;
+      .nav.show {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 58px;
+        width: 100%;
+        background: #6b8f83;
+        padding-bottom: 20px;
+        flex-direction: column;
+      }
+
+      .nav {
+        display: none;
+      }
+      .nav,
+      .links,
+      .auth {
+        flex-direction: column;
+      }
+      .links {
+        ul {
+          padding: 0;
+          flex-direction: column;
+          text-align: center;
+
+          li {
+            font-weight: bold;
+            padding-bottom: 10px;
+            width: 100%;
+            transition: 0.5s;
+            &:hover {
+              transform: scale(1.1);
+              border-bottom: 1px solid #213d34;
+            }
+          }
+        }
+      }
+      .auth {
+        button {
+          display: block;
+          background-color: transparent;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
