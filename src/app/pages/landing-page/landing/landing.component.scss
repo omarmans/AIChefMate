@@ -1,0 +1,203 @@
+.Landing {
+  position: relative;
+  height: 90vh;
+  background: #f1f2ed;
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    h1 {
+      font-family: "Syne";
+
+      font-weight: 500;
+      // font-size: 61px;
+      font-size: 40px;
+
+      color: #213d34;
+    }
+    p {
+      // width: 458px;
+      // height: 30px;
+
+      font-family: "Work Sans";
+
+      font-weight: 400;
+      font-size: 26px;
+
+      color: #213d34;
+    }
+  }
+
+  .body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .left {
+      // padding-left: 10px;
+      padding: 10px;
+      margin-bottom: 120px;
+      // width: 290px;
+      // height: 491px;
+
+      background-color: #fff;
+      border-radius: 34px;
+      h1 {
+        // width: 121px;
+        // height: 73px;
+
+        font-family: "Syne";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 61px;
+        // font-size: 40px;
+
+        margin: 0;
+        color: #213d34;
+      }
+      p {
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+      }
+      img {
+        width: 260px;
+        height: 293px;
+
+        border-radius: 15px;
+      }
+    }
+    .center {
+      // position: relative;
+      display: flex;
+      .left-img {
+        img {
+          width: 275px;
+          height: 461px;
+
+          border-radius: 42px;
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        // height: 100%;
+        margin: 10px;
+        .try,
+        .start {
+          // width: 148px;
+          // height: 28px;
+          padding: 15px 40px;
+          border-radius: 34px;
+          font-family: "Work Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          // line-height: 28px;
+          cursor: pointer;
+          text-align: center;
+
+          color: #213d34;
+
+          border: 1px solid #213d34;
+          transition: 0.5s;
+          &:hover {
+            background-color: #d9ef78;
+            color: #213d34;
+          }
+        }
+        .start {
+          background-color: #d9ef78;
+          padding: 20px 40px;
+          &:hover {
+            background-color: #213d34;
+            color: #d9ef78;
+          }
+        }
+        .happy {
+          width: 390px;
+          // height: 200px;
+          background-color: #213d34;
+          color: #d9ef78;
+          border-radius: 40px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 20px;
+          font-family: "Syne";
+          // font-style: normal;
+          font-weight: 500;
+          font-size: 61px;
+          padding: 15px;
+        }
+      }
+      .right-img {
+        margin-left: 10px;
+        background-color: #fff;
+        padding: 12px;
+        border-radius: 34px;
+        img {
+          width: 260px;
+          height: 293px;
+
+          border-radius: 15px;
+        }
+        h1 {
+          font-family: "Syne";
+          // font-style: normal;
+          font-weight: 500;
+          font-size: 61px;
+          margin: 0;
+          margin-bottom: 10px;
+          color: #213d34;
+        }
+        p {
+          font-family: "Work Sans";
+          // font-style: normal;
+          // font-weight: 400;
+          font-size: 26px;
+          // line-height: 30px;
+          color: #213d34;
+        }
+      }
+    }
+
+    .right {
+      margin-bottom: 120px;
+      // width: 290px;
+      // height: 491px;
+      border-radius: 34px;
+
+      background-color: #fff;
+      img {
+        // width: 100%;
+        // width: 290px;
+        // height: 491px;
+        // width: 275px;
+        width: 230px;
+        height: 461px;
+        border-radius: 34px;
+      }
+    }
+  }
+
+  .sq {
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    width: 687px;
+    height: 203px;
+    z-index: 54584514141;
+    background: #f1f2ed;
+    border-radius: 968px 0px 0px 968px;
+  }
+}
